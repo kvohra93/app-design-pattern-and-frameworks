@@ -93,4 +93,19 @@ public class DogController {
 
 	}
 
+	@RequestMapping("addTrainer")
+	public ModelAndView addTrainer() {
+
+		mv.setViewName("addNewTrainer");
+		return mv;
+
+	}
+	
+	@RequestMapping("indexPage")
+	public ModelAndView Home() {
+		mv.setViewName("index");
+		mv.setViewName("home");
+		return mv;
+
+	}
 }
